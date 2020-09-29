@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DOF Ministries</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+
+
+
+
+  body { 
+    background: color: #301934;
+    font: 400 20px/1.8 New Times Roman, New Times Roman;
+    color: #301934;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    /*filter: grayscale(90%);*/
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item: {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item: {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #c8a2c8;
+    background-color: #c8a2c8;
+    color: #c8a2c8;
+  }
+  .modal-header, h4, .close {
+    background-color: #c8a2c8;
+    color: #c8a2c8 !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #c8a2c8;
+  }
+  #googleMap {
+    width: 100%;
+    height: 100px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+
+    <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/62352045_190232191912328_6595800689719377920_n.jpg?_nc_cat=102&_nc_sid=dd9801&_nc_ohc=lcNqIIzBc1wAX9Osmp3&_nc_ht=scontent-ort2-2.xx&oh=5f35b3b8dd01a2dbc16c53de808d8158&oe=5F88A2A5" alt="" width="100" height="100">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#Food">FOOD</a></li>
+        <li><a href="#Service">SERVICE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        
+        
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="Our Worship and Praise" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://www.kxan.com/wp-content/uploads/sites/40/2020/03/KEA_6385.jpg?w=2560&h=1440&crop=1" alt="Worship" width="1200" height="1200">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://static.seattletimes.com/wp-content/uploads/2016/05/44cce28e-0ced-11e6-970c-389739c0beb2-1020x668.jpg" alt="" width="1200" height="1200">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="https://i.pinimg.com/originals/34/6c/3a/346c3aacbb35f3c0c639c72fb91f6f6e.jpg" alt="" width="1200" height="1200">
+        <div class="carousel-caption">
+          <h3>Disiples OF Faith Ministries </h3>
+          <p>We Worship and Praise God for his Tender Mercies and Grace towards us.</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Food Section) -->
+<div id="Food" class="container text-center">
+  <h3>Food</h3>
+  <p><em>We Service the unwanted and unhoused with love and dignity.</em></p>
+  <p>Disciples of Faith-The Hub is a Christian Fellowship that does ministry outside of the box by being a light in the community we serve. Our mission is to reach those that have been cast aways unhoused and abandoned by society and show them the love of Jesus Christ by fostering good and healthy  relationships . We strive to not just feed clothe and house the unhoused but help them become self sufficient and learn lifeskills  to last a lifetime through the word of God.
+</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong> The Hub</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://i.swncdn.com/media/800w/cms/CW/49758-Jesus-crucifixion-1200x627-thinkstock.1200w.tn.webp" class="" alt="" width="125" height="125">
+      </a>
+      <div id="demo" class="collapse">
+        <p>We Provide Food daily.</p>
+        <p>Breakfast Lunch and Dinner.</p>
+        <p>Servicing the least of these.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong> Destiny Outreach</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/p720x720/78220464_10158161498992642_9145267004310028288_o.jpg?_nc_cat=103&_nc_sid=dd9801&_nc_ohc=SjfLa-q6xxUAX8hi0y4&_nc_ht=scontent-ort2-2.xx&tp=6&oh=f6a8cba8dfefba2d54326035b3b04af5&oe=5F8861C6" class="" alt="" width="125" height="125">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Serving the unhoused with diginity.</p>
+        <p>Providing not just food but life Skill.</p>
+        <p>Destiny Food Mission.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Monday Manna</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/93797116_10156848479077035_7423802352106209280_n.jpg?_nc_cat=100&_nc_sid=110474&_nc_ohc=cgpgGTcqMIEAX_beio3&_nc_ht=scontent-ort2-2.xx&oh=9763dc79fc563431390f5f2e7782311c&oe=5F8983A5" class="" alt="" width="125" height="125">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Monday Manner Prayer.</p>
+        <p>Dinner after Prayer.</p>
+        <p>Serving with Love.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Service Section) -->
+<div id="Service" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Service Times</h3>
+    <p class="text-center">Due to Covid 19 all our services are via facebook live stream and conference calls.<br> Monday 7pm Prayer Sunday 1030am Sunday  School.</p>
+    <ul class="list-group">
+      <li class="list-group-item">September The Destiny Family Outreach Shelter is open Mon-friday at 6pm to 7am.<span class="label label-danger"></span></li>
+      <li class="list-group-item">October Please stay in touch for the updates on the shelter hours due to covid 19.<span class="label label-danger"></span></li> 
+      <li class="list-group-item">November Due to the Covid 19 crisis we are remaining closed services vitually.<span class="badge"></span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/s960x960/118915094_10157247145792035_6192496368677338735_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=G6BeoaQlZFMAX80x6Na&_nc_ht=scontent-ort2-2.xx&tp=7&oh=ff6aec923e7b221ba4220f6ef95c19eb&oe=5F88CE71" alt="" width="200" height="200">
+          <p><strong>New Study Book</strong></p>
+          <p>Books Availale upon request.</p>
+        
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/118859655_10157246832027035_7795899331988848991_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=Ge2QcOI9PSYAX8_mczw&_nc_ht=scontent-ort2-2.xx&oh=e0ee90d439d555544293ffd5c1dee94b&oe=5F8B797A" alt="" width="200" height="200">
+          <p><strong>Sunday School</strong></p>
+          <p>Sunday School every Sunday at 10am cst via facebook live.</p>
+        
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/49671321_10155707901527035_6948790642889719808_n.jpg?_nc_cat=100&_nc_sid=110474&_nc_ohc=ieW7hCVAYH8AX9ZG6Rs&_nc_ht=scontent-ort2-2.xx&oh=0cd735e74acac1789e603e7c7f82d411&oe=5F8B5B50" alt="" width="400" height="400">
+          <p><strong>School of the Spirit</strong></p>
+          <p>Please Join us every Tuesday 7pm cst via facebook live.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> </h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> </label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love Serving!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Any Prayer Request?</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>St Louis Missouri</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone:3144999600</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: disciplesoffaithtwc@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">From The Pastors Desk Thank you for all our Prayers and Encourgement.</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Yolanda</a></li>
+    <li><a data-toggle="tab" href="#menu1">Timothy</a></li>
+    <li><a data-toggle="tab" href="#menu2">Cassandra</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Yolanda Sulton,Assisant Pastor</h2>
+      <p>The HUB is a great place to learn about Jesus while servicing the community.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Apostle Timothy Jones, Pastor KLife Blue Island IL</h2>
+      <p>When my church and i come visit we have a awesome worship experience and the members are friendly.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Cassandra Griffin, Pastor</h2>
+      <p>The members are so sweet and welcoming each time i visit.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://www.google.com/maps/vt/data=OKcQVPkXpGn3gAnS-pf6jLAA3M2U2uWSkotr_eRh8goERaEecoMMzgkwiCQFBZ5Ake-t8Xtnki9FsmlUugRikFjM71tvjmZmG9I3aJEskqY2r8hF_gC9CQzqM2XvvMKH4WIRLhTjdvz1x8Tblq7BZ_NAIsHlMeiRgFAcV6UL-soYRCYKFn9Q7M9QpBmyUnZ-JR9vNH-qZsf5DzB9te0zSgch9SHl7YewYNbJxWVT6VQr3qh_OTJ39UHy2Pr9TQiAfqGoCKfy521lMJbmWW7ruJokayR5lXG05TFDvZ1xvNhY1A27kj82OQ" class="img-responsive" style="width:100%"
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Assignment Done by Yolanda Sulton <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools"</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
